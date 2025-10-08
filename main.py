@@ -2,7 +2,7 @@ import openai
 
 
 client = openai.OpenAI(
-    api_key="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",
+    api_key="Your Api",
     base_url="https://openrouter.ai/api/v1"
 )
 
@@ -35,3 +35,4 @@ if __name__ == "__main__":
         response = chat_with_openrouter(user_input)
 
         print("Chatbot:", response)
+
