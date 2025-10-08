@@ -20,17 +20,18 @@ def chat_with_openrouter(prompt):
 
     except Exception as e:
         # Handle any errors gracefully
-        return f"⚠️ Error: {e}"
+        return f" Error: {e}"
 
 if __name__ == "__main__":
-    print("🤖 OpenRouter Chatbot started! Type 'exit' or 'quit' to end.\n")
+    print("OpenRouter Chatbot started! Type 'exit' or 'quit' to end.\n")
 
     while True:
         user_input = input("You: ")
         if user_input.lower() in ["quit", "exit", "bye"]:
-            print("Chatbot: Goodbye! 👋")
+            print("Chatbot: Goodbye! ")
             break
 
         # Get response
         response = chat_with_openrouter(user_input)
+
         print("Chatbot:", response)
